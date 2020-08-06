@@ -3,35 +3,46 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online Medical Store System</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
-<body>
-<div id="header">
-	<div id="navigation">
-    	<ul>
-        	<li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="admin.html">ADMINISTRATOR </a></li>
-            <li><a href="customer.html">CUST0MER</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>	
-    </div>
-</div>
+<link rel="stylesheet" href="css/style1.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
 
-<table width="960" border="0" cellspacing="10" cellpadding="0" align="center">
-  <tr align="justify">
-     <td valign="top">
-  
-			<br><a href='order.html'>Click to Buy Something</a> 
-		   <br><a href='track.html'>Track your order here</a> 
-		   <br><a href='cart.html'>Click to visit cart</a> 
+<body> <div class="df-content-wrapper">
+        <div class="df-overlay"></div>
+        <div class="df-content">
+
+            <header class="df-navigation">
+                <a href="index.html" class="df-logo">
+                    <div></div>
+                </a>
+                <nav class="df-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <li><a href="customer.html">Customer</a></li>
+                        <li><a href="contactus.html">ContactUs</a></li>
+                       <li><a href="about.html">AboutUs</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+<div class="container">  
+           <h2>Welcome</h2> 
+    	<form name=F1 onSubmit="return dil(this)" action="login.html" >
 		
-  </tr>
-</table>
+    <table>
+		<input  type="submit" formaction="order.html" value="Click to Buy Something">
+        <input type="submit" formaction="track.html" value="Track your order herer">
+         <input type="submit" formaction="cart.html" value="Click to visit cart">
 
+             	</table>
+				</form>
+  		
 
 
 
 
 </body>
 </html>
+
