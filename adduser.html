@@ -4,69 +4,52 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online Medical Store System</title>
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<body>
-<div id="header">
-	<div id="navigation">
-    	<ul>
-        	<li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="admin.html">ADMINISTRATOR </a></li>
-            <li><a href="customer.html">CUST0MER</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>	
-    </div>
-</div>
+<link rel="stylesheet" href="css/style1.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
 
+<body> <div class="df-content-wrapper">
+        <div class="df-overlay"></div>
+        <div class="df-content">
+
+            <header class="df-navigation">
+                <a href="index.html" class="df-logo">
+                    <div></div>
+                </a>
+                <nav class="df-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <li><a href="customer.html">Customer</a></li>
+                        <li><a href="contactus.html">ContactUs</a></li>
+                       <li><a href="about.html">AboutUs</a></li>
+                    </ul>
+                </nav>
+            </header>
   
-<table width="960" border="0" cellspacing="10" cellpadding="0" align="center">
-  <tr align="justify">
-    <td valign="top">
+    <div class="container">  
+           <h2>Welcome</h2> 
       
+       
         <form name=F1 onSubmit="return dil(this)" action="adminprocess.html" >
           <table cellspacing="5" cellpadding="3"> 
-        
-          <tr><td>USER NAME:</td><td> <input type="text" name="username"/></td></tr>
-          <tr><td>PASSWORD:</td><td> <input type="password" name="password"/></td></tr>
-          <tr><td>RE-PASSWORD:</td><td> <input type="password" name="repassword"/></td></tr>
-          
-          <!-- Gender:<br/><br/>
-          Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"/><br/><br/> -->
-          <tr><td>ADDRESS:</td><td> <input type="text" name="adderess"/></td></tr>
-          <tr><td>CITY NAME:</td><td> <input type="text" name="cityname"/></td></tr>
-          <tr><td>STATE NAME:</td><td> <input type="text" name="statename"/></td></tr>
-          
-          <TR>
-  <TD> Country Name   :</TD> <TD> <SELECT NAME="country"> 
-                  <option value=a > America 
-                  <option value=b > Bangladesh
-                  <option value=c1 > China
-                  <option value=c2 > Canada
-                  <option value=g > Germany 
-                  <option value=h > Holland
-                  <option value=i > India
-                  <option value=a > Malasia
-                  <option value=p > Polland
-                  <option value=r > Russia
-                  <option value=u>  UK 
-                  </SELECT> </TD>
-
-</TR> 
-
-</TR>
-                    <tr><td>PHONE:</td><td> <input type="text" name="phone"/></td></tr>
-                    <tr><td>EMAIL:</td><td> <input type="text" name="email"/></td></tr>
-          <tr><td></td><td><input type="submit" value="Submit"/>
+          <input type="text" placeholder="username">
+        <input type="password" placeholder="password">
+       
+         <input type="text" placeholder="adderess">
+         
+           
+             <input type="text" placeholder="phone no">
+              <input type="text" placeholder="email">
+          <input type="submit" value="Submit"/>
           
           <INPUT TYPE=RESET VALUE="CLEAR"></td></tr>
           </table>
                   </form>
         
       
-   
-    
-  </tr>
 
 
 </body>
 </html>
+
