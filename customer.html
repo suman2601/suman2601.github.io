@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Online Medical Store System</title>
+<link rel="stylesheet" href="css/style1.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+
+
+</head>
+<body>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("username can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+
+ <div class="df-content-wrapper">
+        <div class="df-overlay"></div>
+        <div class="df-content">
+
+            <header class="df-navigation">
+                <a href="index.html" class="df-logo">
+                    <div></div>
+                </a>
+                <nav class="df-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <li><a href="customer.html">Customer</a></li>
+                        <li><a href="contactus.html">ContactUs</a></li>
+                       <li><a href="about.html">AboutUs</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <div class="container">  
+           <h2>Welcome</h2> 
+    	<form name="myform" method="post" action="login.html" onsubmit="return validateform()" > 
+			
+        <input type="text" id="usr" name="name" placeholder="username">
+        <input type="password" id="psw" name="password" placeholder="password">
+        <input type="submit" value="Login">
+					<INPUT TYPE=RESET VALUE="CLEAR">
+                   </form>
+
+                   <form name=F1 onSubmit="return dil(this)" action="customer.html" >
+                   <input  type="submit" formaction="forgotpass.html" value="forgot password?">
+                   <input type="submit" formaction="Register.html" value="New User">
+</form>
+             	</table>
+		
+  		
+</table>
+</head>
+</html>
+
