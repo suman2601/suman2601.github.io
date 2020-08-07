@@ -11,8 +11,8 @@
 <body>
 <script>  
 function validateform(){  
-var name=document.myform.name.value;  
-var password=document.myform.password.value;  
+var name=document.F1.name.value;  
+var password=document.F1.password.value;  
   
 if (name==null || name==""){  
   alert("username can't be blank");  
@@ -45,7 +45,7 @@ if (name==null || name==""){
 
     <div class="container">  
            <h2>Welcome</h2> 
-    	<form name="myform" method="post" action="login.html" onsubmit="return validateform()" > 
+    	<form name="F1" method="post" action="login.html" onsubmit="return validateform()" > 
 			
         <input type="text" id="usr" name="name" placeholder="username">
         <input type="password" id="psw" name="password" placeholder="password">
@@ -53,7 +53,7 @@ if (name==null || name==""){
 					<INPUT TYPE=RESET VALUE="CLEAR">
                    </form>
 
-                   <form name=F1 action="login.html" action="customer.html" >
+                   <form name=F1  action="customer.html" >
                    <input  type="submit" formaction="forgotpass.html" value="forgot password?">
                    <input type="submit" formaction="Register.html" value="New User">
 </form>
