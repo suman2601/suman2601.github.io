@@ -7,7 +7,23 @@
 <link rel="stylesheet" href="css/style.css"/>
 
 </head>
-<body> <div class="df-content-wrapper">
+<body> 
+        
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("username can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
+        <div class="df-content-wrapper">
         <div class="df-overlay"></div>
         <div class="df-content">
 
@@ -28,10 +44,10 @@
 
     <div class="container">  
            <h2>Welcome</h2> 
-      <form name=F1 onSubmit="return dil(this)" action="adminprocess.html" >
+      	<form name="myform" method="get" action="adminprocess.html" onsubmit="return validateform()" > 
       
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
+        <input type="text" id="name" name="name" placeholder="username">
+        <input type="password" id="password" name="password" placeholder="password">
         <input type="submit" value="Login">
           
                    
