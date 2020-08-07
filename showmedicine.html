@@ -3,43 +3,34 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Online Medical Store System</title>
-<body>
-<div id="header">
-	<div id="navigation">
-    	<ul>
-        	<li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="admin.html">ADMINISTRATOR </a></li>
-            <li><a href="customer.html">CUST0MER</a></li>
-            <li><a href="contactus.html">Contact Us</a></li>
-        </ul>	
-    </div>
-</div>
 
-<table width="960" border="0" cellspacing="10" cellpadding="0" align="center">
-<tr align="justify">
-    <td valign="top">
-    	<form name=F1 onSubmit="return dil(this)" action="purchase.html" >
-				   <table cellspacing="10" cellpadding="8">	
-				
-		
-					
-					<tr><td>shows Medicine</td>					
-					<tr><td></td><td><input type="submit" value="purchase now"/>
-					
-                   
-             	</table>
-				</form>
-        <form name=F1 onSubmit="return dil(this)" action="cart.html" >
-           <table cellspacing="10" cellpadding="8"> 
-        
-            
-          <tr><td></td><td><input type="submit" value="add to cart"/>
-          
-                   
-              </table>
-        </form></td></tr>
-  		
-</table>
+<link rel="stylesheet" href="css/style1.css"/>
+<link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body> <div class="df-content-wrapper">
+        <div class="df-overlay"></div>
+        <div class="df-content">
+
+            <header class="df-navigation">
+                <a href="index.html" class="df-logo">
+                    <div></div>
+                </a>
+                <nav class="df-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="admin.html">Admin</a></li>
+                        <li><a href="customer.html">Customer</a></li>
+                        <li><a href="contactus.html">ContactUs</a></li>
+                       <li><a href="about.html">AboutUs</a></li>
+                    </ul>
+                </nav>
+            </header>
+    	  <div class="container">  
+           <h2>shows medicine</h2>
+             <form name=F1 onSubmit="return dil(this)" action="showmedicine.html" >
+ <input  type="submit" formaction="purchase.html" value="purchase now">
+                   <input type="submit" formaction="cart.html" value="add to cart">
+
 </head>
 </html>
