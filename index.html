@@ -6,15 +6,38 @@
 <link rel="stylesheet" href="css/style.css"/>
 <link rel="stylesheet" href="css/style2.css"/>
 
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
+  .modal-header, h4, .close {
+    background-color: #808080;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+  }
+  .modal-footer {
+    background-color: #f9f9f9;
+  }
 h1 {text-align: center;}
 p {text-align: center;}
 div {text-align: center;}
 </style>
+<script>  
+function validateform(){  
+var name=document.myform.name.value;  
+var password=document.myform.password.value;  
+  
+if (name==null || name==""){  
+  alert("username can't be blank");  
+  return false;  
+}else if(password.length<6){  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>  
 </head>
 
-<body>  
+<body>
     <div class="df-content-wrapper">
         <div class="df-overlay"></div>
         <div class="df-content">
@@ -72,11 +95,53 @@ div {text-align: center;}
      <section class="df-main df-home-content container">
 
                 <p><h2>Welcome!</h2></p>
-            
+                <input type="submit" value="Login" id="myBtn">
+          
+
             </section>
         </div>
     </div>
 
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4>Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form name="myform" method="get" action="login.html" onsubmit="return validateform()">
+            <div class="form-group">
+              <input type="text" class="form-control" id="usrname" placeholder="username">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="psw" placeholder="Password">
+            </div>
+              <button type="submit" class="btn btn-success btn-block">Login</button>
+              <button type="submit" class="btn btn-success btn-block" data-dismiss="modal">Cancel</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+     
+          <p><a href="Register.html">Sign Up</a></p>
+          <p><a href="forgotpass.html">Forgot Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
 
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+</script>
 </body>
 </html>
